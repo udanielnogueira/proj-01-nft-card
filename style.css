@@ -1,0 +1,154 @@
+:root {
+    font-size: 62.5%;
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--very-dark-blue-main-bg);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--very-dark-blue-card-bg);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* over effect */
+.nft-img-link {
+    /* talk about */
+    position: relative;
+}
+
+.nft-img {
+    width: 30rem;
+    border-radius: 0.5rem;
+}
+
+/* over effect */
+.overlay-color {
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 99%;
+    opacity: 0;
+    transition: .7s ease;
+    background-color: var(--cyan);
+}
+
+/* over effect */
+.overlay-icon {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    height: 15%;
+    width: 15%;
+
+    /* talk about */
+    opacity: 0;
+    transition: .7s ease;
+}
+
+/* over effect */
+.nft-img-link:hover .overlay-icon {
+    /* talk about */
+    opacity: 1;
+}
+
+/* over effect */
+.nft-img-link:hover .overlay-color {
+     opacity: 0.4;
+     border-radius: 0.5rem;
+}
+
+.nft-name {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.nft-name:hover {
+    color: var(--cyan);
+}
+
+.description {
+    font-weight: 300;
+    color: var(--softblue);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    color: var(--cyan);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.days {
+    color: var(--softblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    font-weight: 300;
+}
+
+.author {
+    color: var(--softblue);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 300;
+}
+
+.author-img {
+    width: 3rem;
+    border: solid white 0.1rem;
+    border-radius: 100%;
+}
+
+.author-name {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.author-name:hover {
+    color: var(--cyan);
+}
+
+.card hr {
+    border: 1px solid var(--very-dark-blue-line);
+}
