@@ -1,11 +1,11 @@
 :root {
     font-size: 62.5%;
     --white: hsl(0, 0%, 100%);
-    --cyan: hsl(178, 100%, 50%);
-    --softblue: hsl(215, 51%, 70%);
-    --very-dark-blue-line: hsl(215, 32%, 27%);
-    --very-dark-blue-main-bg: hsl(217, 54%, 11%);
-    --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --purple: hsl(281, 60%, 81%);
+    --softwhite: hsl(0, 0%, 87%);
+    --very-dark-gray-line: hsl(0, 0%, 15%);
+    --very-dark-blue-main-bg: hsl(0, 0%, 6%);
+    --very-dark-blue-card-bg: hsl(0, 0%, 9%);
 }
 
 * {
@@ -61,7 +61,7 @@ body {
     opacity: 0;
     transition: .7s ease;
     border-radius: 0.5rem;
-    background-color: var(--cyan);
+    background-color: var(--purple);
 }
 
 .overlay-icon {
@@ -96,14 +96,14 @@ body {
 }
 
 .card__title:hover {
-    color: var(--cyan);
+    color: var(--purple);
 }
 
 /* Card Description */
 
 .card__description {
     font-weight: 300;
-    color: var(--softblue);
+    color: var(--softwhite);
 }
 
 /* Card Info */
@@ -116,7 +116,7 @@ body {
 
 .card__price {
     font-weight: 400;
-    color: var(--cyan);
+    color: var(--purple);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,7 +125,7 @@ body {
 
 .card__days {
     font-weight: 300;
-    color: var(--softblue);
+    color: var(--softwhite);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,14 +135,14 @@ body {
 /* Horiziontal Rule */
 
 .card hr {
-    border: 1px solid var(--very-dark-blue-line);
+    border: 1px solid var(--very-dark-gray-line);
 }
 
 /* Card Author */
 
 .card__author {
     font-weight: 300;
-    color: var(--softblue);
+    color: var(--softwhite);
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -160,5 +160,5 @@ body {
 }
 
 .card__author-name:hover {
-    color: var(--cyan);
+    color: var(--purple);
 }
