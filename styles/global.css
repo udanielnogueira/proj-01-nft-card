@@ -1,0 +1,30 @@
+@import url(./app.css);
+@import url(./main.css);
+@import url(./footer.css);
+
+:root {
+    font-size: 62.5%;
+
+    --white: hsl(0, 0%, 100%);
+    --purple: hsl(277, 50%, 70%);
+    --very-dark-gray-line: hsl(0, 0%, 15%);
+    --very-dark-black-main-bg: hsl(0, 0%, 3%);
+    --very-dark-black-card-bg: hsl(0, 0%, 9%);
+
+    --light: 300;
+    --regular: 400;
+    --semi-bold: 600; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--very-dark-black-main-bg);
+}

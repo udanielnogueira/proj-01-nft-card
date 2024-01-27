@@ -1,45 +1,12 @@
-:root {
-    font-size: 62.5%;
-    --white: hsl(0, 0%, 100%);
-    --purple: hsl(278, 58%, 70%);
-    --softwhite: hsl(0, 0%, 87%);
-    --very-dark-gray-line: hsl(0, 0%, 15%);
-    --very-dark-blue-main-bg: hsl(0, 0%, 6%);
-    --very-dark-blue-card-bg: hsl(0, 0%, 9%);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-size: 1.8rem;
-    font-style: normal;
-    font-family: 'Outfit', sans-serif;
-    background-color: var(--very-dark-blue-main-bg);
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-}
-
 .card {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 2.5rem;
-    border-radius: 1rem;
-    background-color: var(--very-dark-blue-card-bg);
     max-width: 35rem;
+    border-radius: 1rem;
+    background-color: var(--very-dark-black-card-bg);
 }
-
-/* Card Image Box*/
 
 .card__image-box {
     /* vai conter algo relativo a ele */
@@ -84,13 +51,11 @@ body {
 }
 
 .card__image-box:hover .overlay-color {
-     opacity: 0.4;
+    opacity: 0.4;
 }
 
-/* Card Title */
-
 .card__title {
-    font-weight: 600;
+    font-weight: var(--semi-bold);
     color: var(--white);
     font-size: 2.5rem;
     text-decoration: none;
@@ -100,14 +65,10 @@ body {
     color: var(--purple);
 }
 
-/* Card Description */
-
 .card__description {
-    font-weight: 300;
-    color: var(--softwhite);
+    font-weight: var(--light);
+    color: var(--white);
 }
-
-/* Card Info */
 
 .card__info {
     display: flex;
@@ -116,7 +77,7 @@ body {
 }
 
 .card__price {
-    font-weight: 400;
+    font-weight: var(--semi-bold);
     color: var(--purple);
     display: flex;
     align-items: center;
@@ -125,25 +86,21 @@ body {
 }
 
 .card__days {
-    font-weight: 300;
-    color: var(--softwhite);
+    font-weight: var(--light);
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.4rem;
 }
 
-/* Horiziontal Rule */
-
 .card hr {
     border: 1px solid var(--very-dark-gray-line);
 }
 
-/* Card Author */
-
 .card__author {
-    font-weight: 300;
-    color: var(--softwhite);
+    font-weight: var(--light);
+    color: var(--white);
     display: flex;
     align-items: center;
     gap: 1rem;
