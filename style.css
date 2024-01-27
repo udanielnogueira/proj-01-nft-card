@@ -1,7 +1,7 @@
 :root {
     font-size: 62.5%;
     --white: hsl(0, 0%, 100%);
-    --purple: hsl(281, 60%, 81%);
+    --purple: hsl(278, 58%, 70%);
     --softwhite: hsl(0, 0%, 87%);
     --very-dark-gray-line: hsl(0, 0%, 15%);
     --very-dark-blue-main-bg: hsl(0, 0%, 6%);
@@ -36,6 +36,7 @@ body {
     padding: 2.5rem;
     border-radius: 1rem;
     background-color: var(--very-dark-blue-card-bg);
+    max-width: 35rem;
 }
 
 /* Card Image Box*/
@@ -47,8 +48,8 @@ body {
 }
 
 .card__nft-img {
-    width: 30rem;
     border-radius: 0.5rem;
+    width: 100%;
 }
 
 .overlay-color {
