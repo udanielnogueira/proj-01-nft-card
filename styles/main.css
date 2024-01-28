@@ -1,16 +1,16 @@
 .card {
+    width: 35rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding: 2.5rem;
-    max-width: 35rem;
     border-radius: 1rem;
     background-color: var(--very-dark-black-card-bg);
 }
 
 .card__image-box {
-    /* vai conter algo relativo a ele */
-    /* por isso usei position relative */
+    /* elemento que vai conter algo relativo */
+    /* position relative */
     position: relative;
 }
 
@@ -21,7 +21,7 @@
 
 .overlay-color {
     /* elemento que vai estar relativo */
-    /* por isso usei position absolute */
+    /* position absolute */
     position: absolute;
     top: 0;
     height: 98.5%;
@@ -34,7 +34,7 @@
 
 .overlay-icon {
     /* elemento que vai estar relativo */
-    /* por isso usei position absolute */
+    /* position absolute */
     position: absolute;
     top: 45%;
     left: 45%;
@@ -44,12 +44,12 @@
     transition: .7s ease;
 }
 
-/* over effects */
-
+/* hover effect */
 .card__image-box:hover .overlay-icon {
     opacity: 1;
 }
 
+/* hover effect */
 .card__image-box:hover .overlay-color {
     opacity: 0.4;
 }
